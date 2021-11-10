@@ -17,14 +17,17 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>VideoSearch:</label>
-          <input
-            value={this.state.search}
-            onChange={this.handleChange}
-            type="text"
-          />
+      <div className="ui segment">
+        <form className="content" onSubmit={this.handleSubmit}>
+          <h5>VideoSearch:</h5>
+          <div className="ui input">
+            <input
+              className="ui input"
+              value={this.state.search}
+              onChange={this.handleChange}
+              type="text"
+            />
+          </div>
         </form>
       </div>
     );

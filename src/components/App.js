@@ -25,7 +25,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="ui container">
         <SearchBar onSubmitForm={this.handleSubmitForm} />
         <p>I have {this.state.videos.length} videos.</p>
         <VideoDetail video={this.state.selectedVideo} />
